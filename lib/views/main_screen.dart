@@ -27,7 +27,7 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       backgroundColor: const Color(0xFFF7F9F6),
       appBar: AppBar(
-        title: const Text('Органайзер растений (Вариант 7)', style: TextStyle(fontWeight: FontWeight.bold)),
+        title: const Text('Органайзер растений', style: TextStyle(fontWeight: FontWeight.bold)),
         backgroundColor: Colors.white,
         elevation: 0,
         foregroundColor: Colors.black87,
