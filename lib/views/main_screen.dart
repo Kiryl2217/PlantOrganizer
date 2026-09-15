@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import '../models/care_task.dart';
+import '../models/plant.dart';
 import '../viewmodels/plant_list_viewmodel.dart';
 import 'components/calendar_strip.dart';
 import 'components/plant_card.dart';
@@ -94,7 +96,7 @@ class _MainScreenState extends State<MainScreen> {
                           dense: true,
                           contentPadding: EdgeInsets.zero,
                           leading: Icon(
-                            task.type.name == 'watering' ? Icons.water_drop : Icons.spa,
+                            task.type == CareType.watering ? Icons.water_drop : Icons.spa,
                             color: Colors.green,
                           ),
                           title: Text(
