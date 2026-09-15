@@ -1,14 +1,11 @@
-enum CareType { watering, fertilizing, spraying, repotting }
+enum CareType {
+  watering('Полив'),
+  fertilizing('Подкормка'),
+  spraying('Опрыскивание'),
+  repotting('Пересадка');
 
-extension CareTypeExtension on CareType {
-  String get title {
-    switch (this) {
-      case CareType.watering: return 'Полив';
-      case CareType.fertilizing: return 'Подкормка';
-      case CareType.spraying: return 'Опрыскивание';
-      case CareType.repotting: return 'Пересадка';
-    }
-  }
+  final String title;
+  const CareType(this.title);
 }
 
 class CareTask {
